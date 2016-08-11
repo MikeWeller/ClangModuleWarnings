@@ -1,0 +1,6 @@
+module mylib {
+    requires cplusplus
+    umbrella "mylib"
+    explicit module * { export * }
+    export *
+}
