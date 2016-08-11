@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 project(ClangModuleWarnings)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Weverything -Wno-pedantic -Werror -Wno-system-headers")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Weverything -Wno-pedantic -Werror -Wno-system-headers -Wno-error=uninitialized")
 
 # When commenting out this line to disable modules, everything works as expected
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fmodules -fcxx-modules")

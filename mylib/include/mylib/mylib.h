@@ -15,4 +15,12 @@ bool exactlyEqual(TFloat lhs, TFloat rhs)
 #pragma clang diagnostic pop
 }
 
+void bar();
+inline void bar()
+{
+    int* i;
+    // I want to see a warning here when building mylib, but not clients
+    *i = 123;
+}
+
 #endif
