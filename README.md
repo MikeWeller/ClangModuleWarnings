@@ -12,7 +12,7 @@ Issues:
 ## Building
 
     mkdir build && cd build
-    cmake ..
+    cmake /path/to/ClangModuleWarnings
     make
 
 You should see two errors:
