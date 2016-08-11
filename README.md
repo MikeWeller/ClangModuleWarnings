@@ -42,3 +42,4 @@ This error should have been ignored by `-Wno-system-header` since the header is 
 
 Commenting out the CMakeLists.txt lines that enable clang modules fixes both these errors.
 
+*Be careful*: you will want to clear your module cache after any tweaks or changes you make otherwise you may end up getting incorrectly (un)successful builds due to stale caches.
